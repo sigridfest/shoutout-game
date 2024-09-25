@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ChooseNameActivity"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_marginTop="50sp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="0sp"
+            android:paddingRight="40sp"
+            android:paddingLeft="40sp"
+            app:srcCompat="@drawable/shoutout_logo" />
+
+        <EditText
+            android:id="@+id/playerNameEditText"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textAppearance="@style/S_text"
+            android:layout_gravity="center"
+            android:inputType="textPersonName"
+            android:maxLength="15"
+            android:autofillHints="name"
+            android:singleLine="true"
+            android:backgroundTint="@color/white"/>
+
+        <EditText
+            android:id="@+id/pinEditText"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Enter Game PIN"
+            android:textColorHint="@color/white"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:inputType="number"
+            android:maxLength="6"
+            android:textAppearance="@style/S_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/playerNameEditText" />
+
+
+        <Spinner
+            android:id="@+id/gameModeSpinner"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin" />
+
+        <Spinner
+            android:id="@+id/gameLengthSpinner"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin" />
+
+
+        <Button
+            android:id="@+id/continueButton"
+            android:layout_width="250sp"
+            android:layout_height="59dp"
+            android:layout_gravity="center"
+            android:layout_margin="15sp"
+            android:backgroundTint="@color/button"
+            android:text="Join Game"
+            android:textAppearance="@style/M_text"/>
+
+        <Button
+            android:id="@+id/backToMain"
+            android:layout_width="250sp"
+            android:layout_height="59dp"
+            android:layout_gravity="center"
+            android:layout_margin="0dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="@color/button"
+            android:text="Back to Menu"
+            android:textAppearance="@style/M_text" />
+    </LinearLayout>
+</ScrollView>

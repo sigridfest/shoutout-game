@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ShoutOut</string>
+    <dimen name="margin">20sp</dimen>
+
+    <!-- Game Modes -->
+    <string-array name="game_modes">
+        <item>CASUAL</item>
+        <item>PARTY</item>
+        <item>MIX</item>
+    </string-array>
+
+    <!-- Game Lengths -->
+    <string-array name="game_lengths">
+        <item>SHORT</item>
+        <item>MEDIUM</item>
+        <item>LONG</item>
+    </string-array>
+</resources>

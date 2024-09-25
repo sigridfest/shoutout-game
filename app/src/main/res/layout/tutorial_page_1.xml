@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/tutorial_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="50dp"
+        android:text="Welcome to shoutout!"
+        android:textAppearance="@style/L_text"/>
+
+    <TextView
+        android:id="@+id/tutorial_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:text="To start a game one of the player needs to create a game!"
+        android:textAppearance="@style/M_text"/>
+    <Button
+        android:id="@+id/create_game_bdutton"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="50sp"
+        android:layout_marginEnd="15sp"
+        android:layout_marginBottom="0sp"
+        android:backgroundTint="@color/button"
+        android:text="Create Game"
+        android:textAppearance="@style/M_text"/>
+
+    <TextView
+        android:id="@+id/tutorial_text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:textAlignment="center"
+        android:text="Swipe for more tips ->"
+        android:textAppearance="@style/M_text"/>
+
+
+
+</LinearLayout>

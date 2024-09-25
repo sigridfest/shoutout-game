@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/tutorial_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginBottom="50dp"
+        android:text="A question will be presented, and players must choose the friend who is most likely to do or say what the question asks."
+        android:textAppearance="@style/M_text"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="297dp"
+        android:layout_centerInParent="true"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        app:srcCompat="@drawable/howto3" />
+
+    <TextView
+        android:id="@+id/tutorial_text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:textAlignment="center"
+        android:text="Swipe for more tips ->"
+        android:textAppearance="@style/M_text"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".LobbyActivity"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="@dimen/margin"
+        app:srcCompat="@drawable/shoutout_logo" />
+
+    <TextView
+        android:id="@+id/gamePinTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/title_text"
+        android:fontFamily="@font/changaone_regular"/>
+
+    <TextView
+        android:id="@+id/readyOverview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        android:fontFamily="@font/changaone_regular"
+        android:text=""
+        android:textAlignment="center"
+        android:textAppearance="@style/title_text" />
+
+    <TextView
+        android:id="@+id/playersHeaderTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        android:fontFamily="@font/changaone_regular"
+        android:text="Players"
+        android:textAlignment="center"
+        android:textAppearance="@style/L_text" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/playersRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/margin" />
+
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/startGameButton"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/button"
+        android:text="Start Game"
+        android:layout_gravity="center"
+        android:textAppearance="@style/M_text"
+        />
+    <Button
+        android:id="@+id/readyButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/button"
+        android:text="Ready"
+        android:textAppearance="@style/M_text"
+        />
+    <Button
+        android:id="@+id/leaveLobby"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin"
+        android:backgroundTint="@color/button"
+        android:text="Leave Lobby"
+        android:layout_gravity="center"
+        android:textAppearance="@style/M_text"
+        />
+
+</LinearLayout>

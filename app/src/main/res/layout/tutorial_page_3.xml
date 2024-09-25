@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/tutorial_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="The rest of the group can now join the lobby by clicking on the 'join game' button."
+        android:textAppearance="@style/M_text"/>
+
+    <Button
+        android:id="@+id/create_game_bdutton"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="15sp"
+        android:layout_marginBottom="0sp"
+        android:backgroundTint="@color/button"
+        android:text="Join Game"
+        android:textAppearance="@style/M_text"/>
+
+    <TextView
+        android:id="@+id/tutorial_text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:textAlignment="center"
+        android:text="Swipe for more tips ->"
+        android:textAppearance="@style/M_text"/>
+
+
+
+</LinearLayout>
